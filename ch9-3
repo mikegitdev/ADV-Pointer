@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int arr[100];
+	int i, N, M;
+	int *ptr;
+	scanf_s("%d", &N);
+	for ( i = 0; i < N; i++)
+	{
+		scanf_s("%d", &arr[i]);
+
+	}
+	scanf_s("%d", &M);
+	ptr = &arr[0];
+	printf("%d", *(ptr + M));
+
+
+
+
+	_getch();
+}
