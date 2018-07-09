@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+
+	int N, M;
+	int *num1, *num2;
+	int sum=0,i;
+	num1 = &N;
+	num2 = &M;
+	scanf_s("%d %d",num1,num2);
+	for ( i = *num1; i <= *num2; i++)
+	{
+		sum=sum+i;
+		
+	
+	}
+	printf("Sum=%d",sum);
+
+	_getch();
+
+
+
+
+
+
+
+
+
+}
