@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+
+	int x, *px;
+	scanf_s("%d\n", &x);
+	
+	scanf_s("%d", &x);
+	px = x;
+	printf_s("%d", px);
+
+	_getch();
+}
