@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int arr[100];
+	int i, N, min, max;
+	
+	scanf_s("%d", &N);
+	for (i = 0; i < N; i++)
+	{   
+		scanf_s("%d", &arr[i]);
+
+	}
+	min = max = arr[0];
+	for ( i = 1; i < N; i++)
+	{
+		if (max < arr[i])
+			max = arr[i];
+
+	}
+	for (i = 1; i < N; i++)
+	{
+		if (min > arr[i])
+			min = arr[i];
+
+	}
+	printf("max=%d \nmin=%d", max, min);
+
+
+
+	_getch();
+}
