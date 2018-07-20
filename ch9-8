@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int i, m, temp;
+	int arr[5];
+	int *ptr;
+	ptr = arr;
+	for ( i = 0; i < 5; i++)
+	{
+		scanf_s("%d", ptr + i);
+	}
+	for ( i = 0; i < 5; i++)
+	{
+		for ( m = i+1; m < 5; m++)
+		{
+			if (*(ptr + i) < *(ptr + m))
+			{
+				temp = *(ptr + i);
+				*(ptr + i) = *(ptr + m);
+				*(ptr + m) = temp;
+			}
+		}
+	}
+	for (int j = 0; j < 5; j++)
+	{
+		if (*(ptr + j)== *(ptr + j+1))
+		{
+			printf("r%d=%d ", (j+2), *(ptr + j));
+		}
+		else
+		{
+			printf("r%d=%d ", j + 1, *(ptr + j));
+		}
+		
+	}
+
+	_getch();
+}
