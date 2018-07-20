@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int arr[3];
+	int *p;
+	p = &arr;
+	int i,m,temp;
+	for ( i = 0; i < 3; i++)
+	{
+		scanf_s("%d", p+i);
+	
+	}
+	for ( i = 0; i < 3; i++)
+	{
+		for ( m = i+1; m < 3; m++)
+		{
+			if (*(p+i)<*(p+m))
+			{
+				temp = *(p + i);
+				*(p + i) = *(p + m);
+				*(p + m) = temp;
+			}
+			
+		}
+	}
+
+	printf("%d", *(p + 1));
+
+	_getch();
+}
