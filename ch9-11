@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+void sum(int a, int b)
+{
+	int *ptr;
+	int sum;
+	sum = a + b;
+	ptr = &sum;
+	printf("%d",*ptr);
+
+
+
+}
+int main()
+{
+	int a, b;
+	scanf_s("%d %d",&a,&b);
+
+	sum(a, b);
+
+	_getch();
+
+}
